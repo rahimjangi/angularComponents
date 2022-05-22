@@ -1,6 +1,14 @@
-<app-elements-home></app-elements-home>
-<app-collections-home></app-collections-home>
-<app-mods-home></app-mods-home>
-<app-views-home></app-views-home>
 
-<router-outlet></router-outlet>
+<div class="ui container">
+    <div class="ui secondary pointing menu">
+        <a class="item" routerLink="/elements" routerLinkActive="active">Elements</a>
+        <a class="item" routerLink="/collections" routerLinkActive="active">Collections</a>
+        <a class="item" routerLink="/mods" routerLinkActive="active">Modules</a>
+        <a class="item" routerLink="/views" routerLinkActive="active">Views</a>
+    </div>
+    <div class="ui segment">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
